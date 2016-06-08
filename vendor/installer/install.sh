@@ -191,8 +191,8 @@ chown -R $TARANTULA_USER:$TARANTULA_USER /opt/tarantula
 
 set -e
 cd /opt/tarantula/rails
-bundle install --no-deployment
-bundle install --deployment
+bundle _1.10.6_ install --no-deployment
+bundle _1.10.6_ install --deployment
 set +e
 
 echo -e $(bold_text "Done installing packages and Tarantula files")"\n"
