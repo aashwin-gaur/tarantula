@@ -135,7 +135,7 @@ fi
 which bundle > /dev/null 2> /dev/null
 if [ $? -gt 0 ]; then
     echo "Installing Bundler..."
-    gem install bundler > /dev/null 2> /dev/null
+    gem install -v 1.10.6 bundler --no-rdoc --no-ri > /dev/null 2> /dev/null
 fi
 
 echo "Installing Passenger..."
