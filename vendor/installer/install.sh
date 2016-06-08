@@ -76,7 +76,7 @@ if [ $(id -u) -gt 0 ]; then
     exit 1
 fi
 
-TARANTULA_REPO="https://github.com/prove/tarantula.git"
+TARANTULA_REPO="https://github.com/aashwin-gaur/tarantula.git"
 
 which lsb_release > /dev/null 2> /dev/null
 if [ $? -gt 0 ]; then
@@ -191,6 +191,7 @@ chown -R $TARANTULA_USER:$TARANTULA_USER /opt/tarantula
 
 set -e
 cd /opt/tarantula/rails
+bundle install --no-deployment
 bundle install --deployment
 set +e
 
