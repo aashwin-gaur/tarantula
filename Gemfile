@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-
+gem 'bundler', '~> 1.10.6'
 gem 'rails', '~> 3.2.11'
 gem 'mysql2'
 gem 'prawn', '~> 0.5.0.1'
